@@ -8,4 +8,4 @@ CREATE TABLE `form`.`users` (
 `gender` VARCHAR( 25 ) NOT NULL,
 `cpnum` VARCHAR( 45 ) NOT NULL,
 `comment` VARCHAR( 45 ) 
-) ENGINE = InnoDB;
+) ENGINE = InnoDB; s
