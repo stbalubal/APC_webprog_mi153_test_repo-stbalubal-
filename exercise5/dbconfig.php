@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $password = "";
-$datbase = "form";
-$link = mysqli_connect($host,$user,$password);
+$datbase = "dbtuts";
+$link = mysqli_connect($host,$user);
 mysqli_select_db($link, $datbase);
 ?>
