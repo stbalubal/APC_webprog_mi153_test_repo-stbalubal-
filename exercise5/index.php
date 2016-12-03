@@ -80,7 +80,7 @@ function delete_id(id)
 <div id="body">
  <div id="content">
  <header>
-	<a href="add_data.php"><font color = "white">You may add your data here</a></font>
+	<a href="mypage.php"><font color = "white">You may add your data here</a></font>
 	<br>
 	<br>
 	<br>
