@@ -3,9 +3,13 @@
 <head> 
 <style>
 	
-	body{
-		background-image: url("HOPE.jpg");
-		background-repeat: repeat;
+	html{
+		background: url(css/pics/pastel_1.jpg);
+		background-repeat: no-repeat center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 	}
 	
 	img.upper{
@@ -18,7 +22,7 @@
 		text-align:center;
 		font family:Lucida Calligraphy;
 		font-size: 20pt;
-		color:rgb(253, 253, 253);
+		color:rgb(0, 0, 0);
 	}
 	
 	img.myself{
@@ -30,25 +34,25 @@
 	li.aboutMe{
 		font-family: Lucida Calligraphy;
 		font-size:20pt;
-		color:rgb(253, 253, 253);
+		color:rgb(0, 0, 0);
 	}
 	
 	p{
 		text-align:center;
 		font-family:Lucida Calligraphy;
 		font-size: 20pt;
-		color: rgb(253, 253, 253); 
+		color: rgb(0, 0, 0); 
 	}
 	
 	p.form{
 		font-size: 16pt;
-		color:rgb(253, 253, 253);
+		color:rgb(0, 0, 0);
 		font-family: Lucida Calligraphy;
 	}
 </style>
 
 <center>
-<font color = "white" font face = "Lucida Calligraphy">
+<font color = "black" font face = "Lucida Calligraphy">
 <h1> Welcome to My Page! <font-size = "30"></h1>
 
 <br>
@@ -91,7 +95,7 @@ Want to know more about me? :)<br></p>
 <br>
 
 <center> 
-<font color = "white" font face = "Lucida Calligraphy">
+<font color = "black" font face = "Lucida Calligraphy">
 <h1>MY FAVORITES <font size = "28"></h1>
 <table>
 	<tr>
@@ -111,7 +115,7 @@ Want to know more about me? :)<br></p>
 <br>
 
 <center>
-<font color = "white" font face = "Lucida Calligraphy">
+<font color = "black" font face = "Lucida Calligraphy">
 TRIVIA QUESTIONS ABOUT ME <font size = "20">
 
 <br>
@@ -136,7 +140,7 @@ TRIVIA QUESTIONS ABOUT ME <font size = "20">
 <br>
 <br>
 
-<font color = "white" font face = "Lucida Calligraphy">
+<font color = "black" font face = "Lucida Calligraphy">
 MY SOCIAL SITES <font size = "24">
 <img src = "social_media.png" width = "850" height = "250" alt = "WEBPROG">
 
@@ -148,7 +152,7 @@ MY SOCIAL SITES <font size = "24">
 <a href = "https://www.youtube.com/"><img src = "you_icon.ico" height="50"></a>
 
 <br>
-<font color = "white" font face = "Lucida Calligraphy">
+<font color = "black" font face = "Lucida Calligraphy">
 <font size = "5">
 
 <a href = "https://www.facebook.com/nicole.balubal">facebook.com/nicole.balubal</a><br>
@@ -157,8 +161,8 @@ MY SOCIAL SITES <font size = "24">
 
 <?php
 // define variables and set to empty values
-$nameErr = $nicknameErr = $emailErr = $homeErr = $genderErr = $websiteErr = $cellErr = "";
-$name = $nickname = $email = $homeAdd = $gender = $comment = $website = $cellNo = "";
+$nameErr = $nicknameErr = $emailErr = $homeErr = $genderErr = $numberErr = "";
+$name = $nickname = $email = $home = $gender = $comment = number = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
@@ -191,23 +195,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
   }
   
-  if (empty($_POST["homeAddress"])) {
+  if (empty($_POST["home"])) {
     $homeErr = "";
   } else {
-    $homeErr = test_input($_POST["homeAddress"]);
+    $homeErr = test_input($_POST["home"]);
     // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z ]*$/",$homeAdd)) {
+    if (!preg_match("/^[a-zA-Z ]*$/",$home)) {
       $homeErr = "Only letters and white space allowed"; 
     }
   }
   
-  if(empty($_POST["cellNum"])){
-	$cellErr = "Cellphone number is required"
+  if(empty($_POST["number"])){
+	$numberErr = "Cellphone number is required"
   } else {
-	$cellNo = test_input($_POST["cellNum"]);
+	$number = test_input($_POST["number"]);
 	//check if cellphone number is well-formed
-	if(!filter_var($cellNo, FILTER_VALIDATE_INT)){
-	$cellErr = "Invalid cellphone number";
+	if(!filter_var($number, FILTER_VALIDATE_INT)){
+	$numberErr = "Invalid cellphone number";
 	}
   }
 
@@ -239,32 +243,38 @@ function test_input($data) {
 <h2>Registration Form</h2>
 </center>
 
-<p><span class="error">* required field.</span></p>
+
+<p class = "form"><span class="error">* required field.</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   Name: <input type="text" name="name" value="<?php echo $name;?>">
   <span class="error">* <?php echo $nameErr;?></span>
   <br><br>
+  
   Nickname: <input type="text" name="nickname" value="<?php echo $nickname;?>">
   <span class="error">* <?php echo $nicknameErr;?></span>
   <br><br>
+  
   E-mail: <input type="text" name="email" value="<?php echo $email;?>">
   <span class="error">* <?php echo $emailErr;?></span>
   <br><br>
-  Home Address: <textarea name="address" rows="5" cols="40"><?php echo $home;?></textarea>
+  
+  Home Address: <textarea name="home" rows="5" cols="40"><?php echo $home;?></textarea>
   <br><br>
-
-  Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
-  <br><br>
-  Cellphone Number: <input type="text" name="cpnum" value="<?php echo $number;?>">
-  <span class="error">* <?php echo $numberErr;?></span>
-  <br><br>
+  
   Gender:
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="Female") echo "checked";?> value="Female">Female
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="Male") echo "checked";?> value="Male">Male
   <span class="error">* <?php echo $genderErr;?></span>
   <br><br>
-	<button id="btn" type="submit" name="btn-save" onclick="location.href='index.php';"><strong>SUBMIT</strong></button>
-
+  
+  Cellphone Number: <input type="text" name="number" value="<?php echo $number;?>">
+  <span class="error">* <?php echo $numberErr;?></span>
+  <br><br>
+  
+  Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+  <br><br>
+  
+  <button id="btn" type="submit" name="btn-save" onclick="location.href='index.php';"><strong>SUBMIT</strong></button>
 </form>
 
 <?php
@@ -277,11 +287,11 @@ echo $email;
 echo "<br>";
 echo $home;
 echo "<br>";
-echo $comment;
+echo $gender;
 echo "<br>";
 echo $number;
 echo "<br>";
-echo $gender;
+echo $comment;
 echo "<br>";
 ?>
 </body>
