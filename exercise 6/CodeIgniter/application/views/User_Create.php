@@ -14,6 +14,12 @@
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
+		
+		table border:0;
+		align:center;
+		cellpadding:15;
+		font-family:Lucida Calligraphy;
+		font-size: 20pt;
 	}
 	
 	
@@ -92,8 +98,8 @@
 			<label for="gender">Gender:</label>
 		</td>
 		<td>
-			<input type="radio" name="gender"<?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
-			<input type="radio" name="gender"<?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
+			<input type="radio" name="gender"<?php if (isset($gender) && $gender=="Female") echo "checked";?> value="Female">Female
+			<input type="radio" name="gender"<?php if (isset($gender) && $gender=="Male") echo "checked";?> value="Male">Male
 			<span class="error">*</span>
 		</td>
 	</tr>
