@@ -61,3 +61,5 @@ $route['views/User_Edit/(:any)'] = 'views/User_Edit/$1';
  
 $route['views/User_View/(:any)'] = 'views/User_View/$1';
 $route['views/(:any)'] = 'views/User_View/$1';
+
+$route['mypage_view'] = 'mypage_view';
