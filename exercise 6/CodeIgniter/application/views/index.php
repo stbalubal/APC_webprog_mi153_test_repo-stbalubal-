@@ -8,7 +8,7 @@
 	}
 	
 	body {
-		background-image: url("<?php echo base_url('css/uploads/bg.jpg')?>");
+		background-image: url("<?php echo base_url('css/pics/pastel_1.jpg')?>");
 	}
 </style>
 
