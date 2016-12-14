@@ -26,9 +26,9 @@
 <body>
 
 <center>
-                <p><a href="<?php echo site_url('views'); ?>">View List</a> | <a href="<?php echo site_url('views/User_Create'); ?>">Add Your Details</a></p>
+<p><a href="<?php echo site_url('views'); ?>">View List</a> | <a href="<?php echo site_url('views/User_Create'); ?>">Add Your Details</a></p>
 				
-<p class="heart" >Details added successfully!</p>
+<p class="heart" >Your Details added successfully!</p>
 </body>
 
 </html>
