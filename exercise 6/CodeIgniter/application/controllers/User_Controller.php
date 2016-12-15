@@ -3,8 +3,8 @@
 	
       function __construct() { 
          parent::__construct(); 
-         $this->load->helper('url'); 
-         $this->load->database(); 
+         $this->load->helper('url');
+		 $this->load->model('User_Model');
       } 
   
       public function index() { 
@@ -12,7 +12,7 @@
          $data['records'] = $query->result(); 
 			
          $this->load->helper('url'); 
-         $this->load->view('user_view',$data); 
+         $this->load->view('views',$data); 
       } 
   
       public function add_user_view() { 
