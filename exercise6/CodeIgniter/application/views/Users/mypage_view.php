@@ -173,8 +173,8 @@ TRIVIA QUESTIONS ABOUT ME &#9825;<font size = "28">
 <center>
 <div class="container">
  <ul>
-<li><a href="<?php echo site_url('users'); ?>">Form</a></a></li>
-<li><a href="<?php echo site_url('users/create'); ?>">Add User</a></li>
+<li><a href="<?php echo site_url('Users'); ?>">Form</a></a></li>
+<li><a href="<?php echo site_url('Users/create'); ?>">Add User</a></li>
 </ul>
 </div>
 </center>
