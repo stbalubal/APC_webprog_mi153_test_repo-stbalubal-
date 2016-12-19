@@ -109,7 +109,7 @@ Want to know more about me? :)<br></p>
 
 <center> 
 <font color = "black" font face = "Lucida Calligraphy">
-<h1>MY FAVORITES <font size = "28"></h1>
+<h1>MY FAVORITES &#9825; <font size = "28"></h1>
 <table>
 	<tr>
 <p align = "right">
