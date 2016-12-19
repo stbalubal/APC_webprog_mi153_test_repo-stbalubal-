@@ -30,31 +30,31 @@
 	p.intro{
 		text-align:center;
 		font family:Lucida Calligraphy;
-		font-size: 150%;
+		font-size: 140%;
 		color:rgb(0, 0, 0);
 	}
 	
 	img.myself{
-		width: 950px;
-		height: 200px;
+		width: 970px;
+		height: 160px;
 		position: center;
 	}
 	
 	li.aboutMe{
 		font-family: Lucida Calligraphy;
-		font-size:150%;
+		font-size:140%;
 		color:rgb(0, 0, 0);
 	}
 	
 	p{
 		text-align:center;
 		font-family:Lucida Calligraphy;
-		font-size: 20pt;
+		font-size: 50%;
 		color: rgb(0, 0, 0); 
 	}
 	
 	p.form{
-		font-size: 16pt;
+		font-size: 50%;
 		color:rgb(0, 0, 0);
 		font-family: Lucida Calligraphy;
 	}
@@ -129,7 +129,7 @@ Want to know more about me? :)<br></p>
 
 <center>
 <font color = "black" font face = "Lucida Calligraphy">
-TRIVIA QUESTIONS ABOUT ME <font size = "20">
+TRIVIA QUESTIONS ABOUT ME <font size = "28">
 
 <br>
 <br>
@@ -252,8 +252,8 @@ function test_input($data) {
 </center>
 
 <center>
-<p class = "form"><span class="error">* required field.</span></p>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+<p class = "form"><span class="error">* required field.</span>
+<p class = "form"><form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   Name: <input type="text" name="name" value="<?php echo $name;?>">
   <span class="error">* <?php echo $nameErr;?></span>
   <br><br>
@@ -280,7 +280,7 @@ function test_input($data) {
   <br><br>
   
   Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
-  <br><br>
+  <br><br></p>
   
   <button id="btn" type="submit" name="btn-save" onclick="location.href='index.php';"><strong>SUBMIT</strong></button>
 </form>
