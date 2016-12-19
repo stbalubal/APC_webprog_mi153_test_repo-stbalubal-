@@ -21,6 +21,16 @@
 	font-size:large;
 }
 
+footer {
+	padding: 0.3em;
+    color: black;
+    background-img: pastel_1.jpg;
+    clear: left;
+    text-align: center;
+    font-family: Lucida Calligraphy;
+	font-size: 40%;
+ }
+
 	img.upper{
 		position:center;
 		width:200px;
@@ -136,7 +146,7 @@ Want to know more about me? :)<br></p>
 
 <center>
 <font color = "black" font face = "Lucida Calligraphy">
-TRIVIA QUESTIONS ABOUT ME <font size = "28">
+TRIVIA QUESTIONS ABOUT ME &#9825;<font size = "28">
 
 <br>
 <br>
@@ -165,133 +175,17 @@ TRIVIA QUESTIONS ABOUT ME <font size = "28">
  <ul>
 <li><a href="<?php echo site_url('users'); ?>">Form</a></a></li>
 <li><a href="<?php echo site_url('users/create'); ?>">Add User</a></li>
-<li><a href="<?php echo base_url('index.php/user_controller/mypage')?>" target="_self">Home</a></li>
 </ul>
 </div>
 </center>
 
-<br>
-<br>
-<br>
+<div class="container2"> 
 
-<?php
-// define variables and set to empty values
-$nameErr = $nicknameErr = $emailErr = $homeErr = $genderErr = $numberErr = "";
-$name = $nickname = $email = $home = $gender = $comment = $number = "";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
-  } else {
-    $name = test_input($_POST["name"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed"; 
-    }
-  }
-  
-  if (empty($_POST["nickName"])) {
-    $nicknameErr = "Nickname is required";
-  } else {
-    $nickname = test_input($_POST["nickName"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z ]*$/",$nickname)) {
-      $nicknameErr = "Only letters and white space allowed"; 
-    }
-  }
-  
-  if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format"; 
-    }
-  }
-  
-  if (empty($_POST["home"])) {
-    $homeErr = "";
-  } else {
-    $homeErr = test_input($_POST["home"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z ]*$/",$home)) {
-      $homeErr = "Only letters and white space allowed"; 
-    }
-  }
-  
-  if(empty($_POST["number"])){
-	$numberErr = "Cellphone number is required";
-  } else {
-	$number = test_input($_POST["number"]);
-	//check if cellphone number is well-formed
-	if(!filter_var($number, FILTER_VALIDATE_INT)){
-	$numberErr = "Invalid cellphone number";
-	}
-  }
+</div>
 
-  if (empty($_POST["comment"])) {
-    $comment = "";
-  } else {
-    $comment = test_input($_POST["comment"]);
-  }
+<br>  
 
-  if (empty($_POST["gender"])) {
-    $genderErr = "Gender is required";
-  } else {
-    $gender = test_input($_POST["gender"]);
-  }
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
-
-<br>
-<br>
-
-<center>
-<h2>Registration Form</h2>
-</center>
-
-<center>
-<p class = "form"><span class="error">* required field.</span>
-<p class = "form"><form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Name: <input type="text" name="name" value="<?php echo $name;?>">
-  <span class="error">* <?php echo $nameErr;?></span>
-  <br><br>
-  
-  Nickname: <input type="text" name="nickname" value="<?php echo $nickname;?>">
-  <span class="error">* <?php echo $nicknameErr;?></span>
-  <br><br>
-  
-  E-mail: <input type="text" name="email" value="<?php echo $email;?>">
-  <span class="error">* <?php echo $emailErr;?></span>
-  <br><br>
-  
-  Home Address: <textarea name="home" rows="5" cols="40"><?php echo $home;?></textarea>
-  <br><br>
-  
-  Gender:
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="Female") echo "checked";?> value="Female">Female
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="Male") echo "checked";?> value="Male">Male
-  <span class="error">* <?php echo $genderErr;?></span>
-  <br><br>
-  
-  Cellphone Number: <input type="text" name="number" value="<?php echo $number;?>">
-  <span class="error">* <?php echo $numberErr;?></span>
-  <br><br>
-  
-  Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
-  <br><br></p>
-  
-  <button id="btn" type="submit" name="btn-save" onclick="location.href='index.php';"><strong>SUBMIT</strong></button>
-</form>
-</center>
-
+<footer> I may not be where I want to be, but thank God I am not where I used to be.</footer>
 </body>
 </html>  
