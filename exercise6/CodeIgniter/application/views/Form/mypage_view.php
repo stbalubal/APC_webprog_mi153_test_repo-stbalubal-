@@ -58,6 +58,13 @@
 		color:rgb(0, 0, 0);
 		font-family: Lucida Calligraphy;
 	}
+	
+	#btn{
+		text-align:center;
+		font-family:Lucida Calligraphy;
+		font-size: 50%;
+		color: rgb(0, 0, 0);
+	}
 </style>
 </head>
 
