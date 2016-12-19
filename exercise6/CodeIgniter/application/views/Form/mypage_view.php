@@ -187,8 +187,11 @@ TRIVIA QUESTIONS ABOUT ME &#9825;<font size = "28">
 <br>  
 
 <footer> I may not be where I want to be, but thank God I am not where I used to be.
+<br>
+<center>
 <a href = "https://www.facebook.com/nicole.balubal"><img src="fb_icon.png" height="50"></a>
 <a href = "https://www.instagram.com/"><img src = "insta.png" height ="50"></a>
 <a href = "https://www.youtube.com/"><img src = "you_icon.ico" height="50"></a></footer>
+</center>
 </body>
 </html>  
