@@ -103,7 +103,7 @@ Want to know more about me? :)<br></p>
 <br>
 
 <center> 
-<img class="myself" src = "<?php echo base_url('css/pics/about_me.png')?>" alt = "web"/>
+<img class="myself" src = "<?php echo Yii::$app->request->baseUrl . "Images/about_me.png'";?>" alt = "web"/>
 
 <table width='100%'>
 	<tr>
