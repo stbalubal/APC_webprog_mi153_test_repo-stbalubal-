@@ -6,15 +6,15 @@ use yii\helpers\Html;
 /* @var $model app\models\Form */
 
 $this->title = 'Update Form: ' . $model->name;
-$this->params['breadcrumbs'][] = ['label' => 'Forms', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'users', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->user_id]];
 $this->params['breadcrumbs'][] = 'Update';
 ?>
-<div class="form-update">
+<div class="users-update">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <?= $this->render('_form', [
+    <?= $this->render('form', [
         'model' => $model,
     ]) ?>
 
