@@ -89,7 +89,7 @@
 
 <br>
 
-<img class = "upper" src = "<?php echo base_url('css/pics/face.png')?>"  alt="web"/>
+<img class = "upper" src = "<?php echo Yii::$app->request->baseUrl . "Images/face.png";?>"  alt="web"/>
 </center>
 
 <body>
