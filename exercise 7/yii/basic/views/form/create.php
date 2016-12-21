@@ -7,14 +7,14 @@ use yii\helpers\Html;
 /* @var $model app\models\Form */
 
 $this->title = 'Create Form';
-$this->params['breadcrumbs'][] = ['label' => 'Forms', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'users', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="form-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <?= $this->render('_form', [
+    <?= $this->render('form', [
         'model' => $model,
     ]) ?>
 
