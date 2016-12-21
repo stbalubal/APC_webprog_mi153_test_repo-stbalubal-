@@ -3,90 +3,19 @@ body {
     height: 100%;
     background-image: url("../Images/pastel_1.jpg");
     background-repeat: no-repeat center fixed;
+    cellpadding:15;
+    font-family: Garamond;
+    font-size:20px;
+    table border:0;
 }
-
-body{
-		background-image: src=("<?php echo Yii::$app->request->baseUrl . "Images/pastel_1.jpg";?>");
-		background-repeat: no-repeat center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	
-	}
-	
-	div.container {
-    width: 100%;
-    border: 1px solid black;
-	color: black;
-	text-align: center;
-	clear: center;
-	font-size:large;
-}
-
-	img.upper{
-		position:center;
-		width:200px;
-		height:200px;
-	}
-	
-	p.intro{
-		text-align:center;
-		font family:Lucida Calligraphy;
-		font-size: 140%;
-		color:rgb(0, 0, 0);
-	}
-	
-	img.myself{
-		width: 970px;
-		height: 160px;
-		position: center;
-	}
-	
-	li.aboutMe{
-		font-family: Lucida Calligraphy;
-		font-size:140%;
-		color:rgb(0, 0, 0);
-	}
-	
-	p{
-		text-align:center;
-		font-family:Lucida Calligraphy;
-		font-size: 50%;
-		color: rgb(0, 0, 0); 
-	}
-	
-	p.form{
-		font-size: 50%;
-		color:rgb(0, 0, 0);
-		font-family: Lucida Calligraphy;
-	}
-	.hehehe {
-		width: 250px;
-		height: 150px;
-	}
-	
-	#btn{
-		text-align:center;
-		font-family:Lucida Calligraphy;
-		font-size: 50%;
-		color: rgb(0, 0, 0);
-	}
-	
-	td, li {
-		margin-left: 350px;
-	}
-	
-	.hi {
-		font-size: 30px;
-	}
 
 
 .wrap {
     min-height: 100%;
     height: auto;
     margin: 0 auto -60px;
-    padding: 0 0 60px;
+    padding: 1% 5% 10%;
+    font-size: 15px;
 }
 
 .wrap > .container {
@@ -94,16 +23,20 @@ body{
 }
 
 .footer {
-    height: 60px;
     background-color: #f5f5f5;
     border-top: 1px solid #ddd;
-    padding-top: 20px;
+    margin-bottom: 0px;
+    height: 30px;
+    padding-top: 2px;
 }
 
 .jumbotron {
+    font-size: 30px;
     text-align: center;
     background-color: transparent;
+    color: black;
 }
+
 
 .jumbotron .btn {
     font-size: 21px;
@@ -120,7 +53,7 @@ a.asc:after, a.desc:after {
     position: relative;
     top: 1px;
     display: inline-block;
-    font-family: 'Lucida Calligraphy';
+    font-family: 'Glyphicons Halflings';
     font-style: normal;
     font-weight: normal;
     line-height: 1;
@@ -192,3 +125,60 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+    img.upper{
+        position:center;
+        width:200px;
+        height:200px;
+    }
+    
+    p.intro{
+        text-align:center;
+        font family:Lucida Calligraphy;
+        font-size: 20px;
+        color:rgb(0, 0, 0);
+    }
+    
+    img.myself{
+        width: 970px;
+        height: 160px;
+        position: center;
+    }
+    
+    li.aboutMe{
+        font-family: Lucida Calligraphy;
+        font-size:20px;
+        color:rgb(0, 0, 0);
+    }
+    
+    p{
+        text-align:center;
+        font-family:Lucida Calligraphy;
+        font-size: 20px;
+        color: rgb(0, 0, 0); 
+    }
+    
+    p.form{
+        font-size: 20px;
+        color:rgb(0, 0, 0);
+        font-family: Lucida Calligraphy;
+    }
+    .hehehe {
+        width: 250px;
+        height: 150px;
+    }
+    
+    #btn{
+        text-align:center;
+        font-family:Lucida Calligraphy;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+    }
+    
+    td, li {
+        margin-left: 350px;
+    }
+    
+    .hi {
+        font-size: 30px;
+    }

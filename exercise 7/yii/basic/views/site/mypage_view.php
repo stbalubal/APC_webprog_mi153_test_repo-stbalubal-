@@ -7,79 +7,10 @@
 <!DOCTYPE HTML>
 <html>
 <head> 
-<style>
-	
-	
-	div.container {
-    width: 100%;
-    border: 1px solid black;
-	color: black;
-	text-align: center;
-	clear: center;
-	font-size:large;
-}
-
-	img.upper{
-		position:center;
-		width:200px;
-		height:200px;
-	}
-	
-	p.intro{
-		text-align:center;
-		font family:Lucida Calligraphy;
-		font-size: 140%;
-		color:rgb(0, 0, 0);
-	}
-	
-	img.myself{
-		width: 970px;
-		height: 160px;
-		position: center;
-	}
-	
-	li.aboutMe{
-		font-family: Lucida Calligraphy;
-		font-size:140%;
-		color:rgb(0, 0, 0);
-	}
-	
-	p{
-		text-align:center;
-		font-family:Lucida Calligraphy;
-		font-size: 50%;
-		color: rgb(0, 0, 0); 
-	}
-	
-	p.form{
-		font-size: 50%;
-		color:rgb(0, 0, 0);
-		font-family: Lucida Calligraphy;
-	}
-	.hehehe {
-		width: 250px;
-		height: 150px;
-	}
-	
-	#btn{
-		text-align:center;
-		font-family:Lucida Calligraphy;
-		font-size: 50%;
-		color: rgb(0, 0, 0);
-	}
-	
-	td, li {
-		margin-left: 350px;
-	}
-	
-	.hi {
-		font-size: 30px;
-	}
-</style>
 </head>
 
 <body>
-<br>
+<br><br><br><br><br><br>
 <center>
 <font color = "black" font face = "Lucida Calligraphy">
 <h1> It's All About ME! &#9825; <font-size = "400"></h1>
@@ -148,21 +79,21 @@ Want to know more about me? :)<br></p>
 <img class = "hehehe" src = "<?php echo Yii::$app->request->baseUrl . "/Images/Trivia.png";?>">
 
 <br>
-
+<br>
 <p id = "question1"> In what subject I am interested?</p>
-<button type = "button" onclick="document.getElementById('question1').innerHTML='Science'"> Answer :)</button>
+<button id="btn" type = "button" onclick="document.getElementById('question1').innerHTML='Science'"> Answer :)</button>
 <br>
 <p id = "question2"> I dream to be a _______?</p>
-<button type = "button" onclick="document.getElementById('question2').innerHTML='Cardiologist'"> Answer :)</button>
+<button id="btn" type = "button" onclick="document.getElementById('question2').innerHTML='Cardiologist'"> Answer :)</button>
 <br>
 <p id = "question3"> What is my first course?</p>
-<button type = "button" onclick="document.getElementById('question3').innerHTML='BS Biology'"> Answer :)</button>
+<button id="btn" type = "button" onclick="document.getElementById('question3').innerHTML='BS Biology'"> Answer :)</button>
 <br>
 <p id = "question4"> What are the names of my dogs?</p>
-<button type = "button" onclick="document.getElementById('question4').innerHTML='Toodles and Drixo'"> Answer :)</button>
+<button id="btn" type = "button" onclick="document.getElementById('question4').innerHTML='Toodles and Drixo'"> Answer :)</button>
 <br>
 <p id = "question5"> My future plan is to ___________?</p>
-<button type = "button" onclick="document.getElementById('question5').innerHTML='travel around the world with my family'"> Answer :)</button>
+<button id="btn" type = "button" onclick="document.getElementById('question5').innerHTML='travel around the world with my family'"> Answer :)</button>
 
 <br>
 <br>
