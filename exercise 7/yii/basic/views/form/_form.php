@@ -8,25 +8,25 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="form-form">
+<div class="users-users">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $users = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+    <?= $users->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'nickname')->textInput(['maxlength' => true]) ?>
+    <?= $users->field($model, 'nickname')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
+    <?= $users->field($model, 'email')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'home')->textInput(['maxlength' => true]) ?>
+    <?= $users->field($model, 'home')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'gender')->textInput(['maxlength' => true]) ?>
+    <?= $users->field($model, 'gender')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'number')->textInput(['maxlength' => true]) ?>
+    <?= $users->field($model, 'number')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'comment')->textInput(['maxlength' => true]) ?>
+    <?= $users->field($model, 'comment')->textInput(['maxlength' => true]) ?>
 
-    <div class="form-group">
+    <div class="users-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 
