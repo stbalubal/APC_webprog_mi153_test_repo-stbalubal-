@@ -148,7 +148,7 @@ Want to know more about me? :)<br></p>
 
 <center>
 
-<img class = "hehehe" src = "<?php echo base_url('css/pics/Trivia.png')?>">
+<img class = "hehehe" src = "<?php echo Yii::$app->request->baseUrl . "Images/Trivia.png";?>">
 
 <br>
 
