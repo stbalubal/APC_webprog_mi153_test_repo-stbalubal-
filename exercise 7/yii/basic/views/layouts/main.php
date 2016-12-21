@@ -28,7 +28,7 @@ AppAsset::register($this);
     <?php
     NavBar::begin([
         'brandLabel' => 'Its All About ME',
-        'brandUrl' => Yii::$app->mypage_viewUrl,
+        'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
