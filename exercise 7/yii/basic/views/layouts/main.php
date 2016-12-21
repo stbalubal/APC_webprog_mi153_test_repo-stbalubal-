@@ -27,7 +27,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'All About Me',
+        'brandLabel' => 'Its All About ME',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -36,12 +36,8 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/page/info']],
-            ['label' => 'About', 'url' => ['/page/index']],
-			['label' => 'Education', 'url' => ['/page/educ']],
-			['label' => 'Family', 'url' => ['/page/family']],
-			['label' => 'Users', 'url' => ['/form']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'MyPage', 'url' => ['/page/mypage_view']],
+          
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
@@ -70,7 +66,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; Rachel Anne R. Brillantes, WEBPROG - MI153 <?= date('Y') ?></p>
+        <p class="pull-left">&copy; Samantha Nicole T. Balubal, WEBPROG - MI153 <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
