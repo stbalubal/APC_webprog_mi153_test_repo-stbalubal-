@@ -4,7 +4,7 @@ namespace app\models;
 
 use Yii;
 
-class users extends \yii\db\ActiveRecord
+class Users extends \yii\db\ActiveRecord
 {
 
 	public static function tableName()
@@ -21,8 +21,6 @@ class users extends \yii\db\ActiveRecord
 		[['comment'], 'string'],
 		[['name','nickname','email','home','gender'], 'string', 'max' => 128],
 		];
-		
-		$this->belongsTo('app\models\users');
 	}
 	
 	public function attributeLabels()
