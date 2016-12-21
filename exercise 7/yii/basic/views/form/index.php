@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\FormSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Forms';
+$this->title = 'users';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="form-index">
