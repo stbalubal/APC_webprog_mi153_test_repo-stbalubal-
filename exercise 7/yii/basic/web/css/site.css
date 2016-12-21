@@ -4,16 +4,6 @@ body {
     background-image: url("../Images/pastel_1.jpg");
     background-repeat: no-repeat center fixed;
 }
-
-body{
-		background-image: src=("<?php echo Yii::$app->request->baseUrl . "Images/pastel_1.jpg";?>");
-		background-repeat: no-repeat center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	
-	}
 	
 	div.container {
     width: 100%;
