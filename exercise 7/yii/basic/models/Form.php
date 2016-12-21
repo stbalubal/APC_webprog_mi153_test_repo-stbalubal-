@@ -4,12 +4,12 @@ namespace app\models;
 
 use Yii;
 
-class form extends \yii\db\ActiveRecord
+class users extends \yii\db\ActiveRecord
 {
 
 	public static function tableName()
 	{
-		return 'form';
+		return 'users';
 	}
 
 	
