@@ -4,7 +4,7 @@
 <style>
 	
 	body{
-		background-image: url("<?php echo base_url('css/pics/pastel_1.jpg')?>");
+		background-image: src=("<?php echo Yii::$app->request->base_url . "Images/pastel_1.jpg";?>");
 		background-repeat: no-repeat center fixed;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
