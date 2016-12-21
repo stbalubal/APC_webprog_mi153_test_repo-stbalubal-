@@ -122,4 +122,9 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    public function actionMypage_view()
+    {
+        return $this->render('mypage_view');
+    }
 }
