@@ -10,10 +10,10 @@ use yii\grid\GridView;
 $this->title = 'users';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="form-index">
+<div class="users-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    <?php // echo $this->render('search', ['model' => $searchModel]); ?>
 
     <p>
         <?= Html::a('Create Form', ['create'], ['class' => 'btn btn-success']) ?>
