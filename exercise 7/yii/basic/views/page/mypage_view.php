@@ -4,7 +4,7 @@
 <style>
 	
 	body{
-		background-image: src=("<?php echo Yii::$app->request->base_url . "Images/pastel_1.jpg";?>");
+		background-image: src=("<?php echo Yii::$app->request->baseUrl . "Images/pastel_1.jpg";?>");
 		background-repeat: no-repeat center fixed;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -133,13 +133,13 @@ Want to know more about me? :)<br></p>
 <table>
 	<tr>
 <p align = "right">
-	<td> <img src = "<?php echo base_url('css/pics/chocolates.jpg')?>" width = "250" height = "250" alt="WEBPROG"/> </th></td>
+	<td> <img src = "<?php echo Yii::$app->request->baseUrl . "Images/chocolates.jpg";?>" width = "250" height = "250" alt="WEBPROG"/> </th></td>
 <p align = "right">
-	<td> <img src = "<?php echo base_url('css/pics/rr_icecream.jpg')?>" width = "250" height = "250" alt="WEBPROG"/> </th></td>
+	<td> <img src = "<?php echo Yii::$app->request->baseUrl . "Images/rr_icecream.jpg";?>" width = "250" height = "250" alt="WEBPROG"/> </th></td>
 <p align = "right">
-	<td> <img src = "<?php echo base_url('css/pics/pizza.jpg')?>" width = "250" height = "250" alt="WEBPROG"/> </th></td>
+	<td> <img src = "<?php echo Yii::$app->request->baseUrl . "Images/pizza.jpg";?>" width = "250" height = "250" alt="WEBPROG"/> </th></td>
 <p align = "right">
-	<td> <img src = "<?php echo base_url('css/pics/fries.jpg')?>" width = "250" height = "250" alt="WEBPROG"/> </th></td>
+	<td> <img src = "<?php echo Yii::$app->request->baseUrl . "Images/fries.jpg";?>" width = "250" height = "250" alt="WEBPROG"/> </th></td>
 </tr>
 </table></center>
 
